@@ -873,7 +873,7 @@ html{
 }
 
 .join-solution-wrap {
-  background: url();
+  background: #081452 !important;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -915,6 +915,7 @@ html{
   display: block;
   text-align: center;
   margin-top: 10px;
+  text-decoration: none !important;
 }
 
 /*** Footer ***/
@@ -940,6 +941,11 @@ html{
   .footer .copyright {
     font-size: 18px !important;
   }
+
+  .join-solution-wrap h6{font-size: 28px;}
+	.join-solution-wrap p{font-size: 16px;}
+	.join-solution-wrap a{font-size: 20px;}
+  .join-solution-wrap { padding: 50px 80px;}
 }
 
 @media (max-width: 767px) {
@@ -955,6 +961,8 @@ html{
   #block-11 {
     right: 35%;
   }
+  
+  .join-solution-wrap{padding: 50px 20px;margin-top: 50px;}
 }
 
 .pay-now {
