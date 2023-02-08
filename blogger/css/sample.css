@@ -1,0 +1,879 @@
+.Galeria {
+    margin-top: 20px;
+}
+
+.image-item {
+    margin-bottom: 20px;
+}
+
+.Images {
+    border-radius: .25rem;
+    max-width: 630px;
+    height: 630px;
+    border-radius: 8px;
+    cursor: default;
+    padding-left: 25px;
+}
+
+.image-block {
+    position: relative;
+}
+
+@media (min-width:1140px) and (max-width:1320px) {
+
+    .ImageText,
+    .ImageText_1,
+    .ImageText_2,
+    .ImageText_3,
+    .ImageText_4,
+    .ImageText_5 {
+        width: auto !important;
+        font-size: 14px !important;
+        padding: 5px !important;
+    }
+
+    .Images {
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .image_text,
+    #Nifty_50,
+    #Sensex,
+    #Bank_Nifty {
+        font-size: 14px !important;
+    }
+
+    #Nifty50_image,
+    #sensex_image,
+    #BankNifty_image {
+        height: 35px !important;
+        width: 35px !important;
+    }
+
+    .image,
+    .image_text {
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+        width: auto !important;
+        align-items: left !important;
+    }
+
+    #Nifty_50_Col,
+    #Sensex_Col,
+    #BankNifty_Col {
+        width: auto !important;
+    }
+}
+
+@media (min-width:960px) and (max-width:1140px) {
+
+    .ImageText,
+    .ImageText_1,
+    .ImageText_2,
+    .ImageText_3,
+    .ImageText_4,
+    .ImageText_5 {
+        width: auto !important;
+        font-size: 12px !important;
+    }
+
+    .Images {
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .ImageText {
+        left: 70px !important;
+        padding: 5px !important;
+    }
+
+    .ImageText_1,
+    .ImageText_2 {
+        left: 38px !important;
+        padding: 5px !important;
+    }
+
+    .ImageText_2 {
+        top: 325px !important
+    }
+
+    .ImageText_3,
+    .ImageText_4 {
+        left: 420px !important;
+        padding: 5px !important;
+    }
+
+    .ImageText_4 {
+        top: 275px !important;
+    }
+
+    .ImageText_5 {
+        left: 410px !important;
+        padding: 5px !important;
+        top: 375px !important;
+    }
+
+    .image_text,
+    #Nifty_50,
+    #Sensex,
+    #Bank_Nifty {
+        font-size: 12px !important;
+    }
+
+    .Images {
+        max-width: 600px !important
+    }
+
+    #Nifty50_image,
+    #sensex_image,
+    #BankNifty_image {
+        height: 30px !important;
+        width: 30px !important;
+    }
+
+}
+
+@media (min-width:675px) and (max-width:800px) {
+
+    .ImageText,
+    .ImageText_1,
+    .ImageText_2,
+    .ImageText_3,
+    .ImageText_4,
+    .ImageText_5 {
+        width: auto !important;
+        font-size: 14px !important;
+        padding: 5px !important;
+    }
+
+    .ImageText {
+        left: 50px !important;
+        padding: 5px !important;
+    }
+
+}
+
+@media (min-width:577px) and (max-width:675px) {
+
+    .ImageText,
+    .ImageText_1,
+    .ImageText_2,
+    .ImageText_3,
+    .ImageText_4,
+    .ImageText_5 {
+        width: auto !important;
+        font-size: 12px !important;
+        padding: 5px !important;
+    }
+
+    .ImageText {
+        left: 40px !important;
+        padding: 5px !important;
+    }
+
+    .ImageText_1 {
+        top: 175px !important;
+        padding: 5px !important;
+    }
+
+    .ImageText_2 {
+        top: 275px !important;
+        left: 0px !important;
+        padding: 5px !important;
+    }
+
+    .ImageText_3 {
+        top: 75px !important;
+        left: 350px !important;
+        padding: 5px !important;
+    }
+
+    .ImageText_4 {
+        top: 225px !important;
+        left: 350px !important;
+        padding: 5px !important;
+    }
+
+    .ImageText_5 {
+        top: 325px !important;
+        left: 350px !important;
+        padding: 5px !important;
+    }
+
+    .Images {
+        width: 500px !important;
+        height: 500px !important
+    }
+}
+
+.ImageText {
+    width: 185px;
+    height: auto;
+    background: #fff 0% 0% no-repeat padding-box;
+    border-radius: 5px 5px 5px 5px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(50px);
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Segoe UI";
+    -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+    box-shadow: 0 0 10px rgb(212, 212, 212);
+    cursor: default;
+}
+
+.ImageTable table tr td:nth-child(2) {
+    padding-left: 10px;
+}
+
+.ImageText_1 {
+    width: 180px;
+    height: auto;
+    background: #fff 0% 0% no-repeat padding-box;
+    border-radius: 5px 5px 5px 5px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(50px);
+    position: absolute;
+    top: 215px;
+    left: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Segoe UI";
+    -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+    box-shadow: 0 0 10px rgb(212, 212, 212);
+    cursor: default;
+}
+
+.ImageText_2 {
+    width: 200px;
+    height: auto;
+    background: #fff 0% 0% no-repeat padding-box;
+    border-radius: 5px 5px 5px 5px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(50px);
+    position: absolute;
+    top: 338px;
+    left: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Segoe UI";
+    -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+    box-shadow: 0 0 10px rgb(212, 212, 212);
+    cursor: default;
+}
+
+.ImageText_3 {
+    width: 200px;
+    height: auto;
+    background: #fff 0% 0% no-repeat padding-box;
+    border-radius: 5px 5px 5px 5px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(50px);
+    position: absolute;
+    top: 100px;
+    left: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Segoe UI";
+    -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+    box-shadow: 0 0 10px rgb(212, 212, 212);
+    cursor: default;
+}
+
+.ImageText_4 {
+    width: 200px;
+    height: auto;
+    background: #fff 0% 0% no-repeat padding-box;
+    border-radius: 5px 5px 5px 5px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(50px);
+    position: absolute;
+    top: 290px;
+    left: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Segoe UI";
+    -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+    box-shadow: 0 0 10px rgb(212, 212, 212);
+    cursor: default;
+}
+
+.ImageText_5 {
+    width: 220px;
+    height: auto;
+    background: #fff 0% 0% no-repeat padding-box;
+    border-radius: 5px 5px 5px 5px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(50px);
+    position: absolute;
+    top: 400px;
+    left: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Segoe UI";
+    -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+    box-shadow: 0 0 10px rgb(212, 212, 212);
+    cursor: default;
+}
+
+@media (min-width:405px) and (max-width:575.99px) {
+    .rocket_launch {
+        padding-top: 25px;
+    }
+
+    .rocket_launch table img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .rocket_launch table tr td:nth-child(2) {
+        font-size: x-small;
+    }
+
+    .Images {
+        border-radius: .25rem;
+        max-width: 350px;
+        height: 350px;
+        border-radius: 8px;
+        cursor: pointer;
+        padding-left: 25px;
+    }
+
+    .ImageText {
+        width: 120px !important;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 20px;
+        left: 2px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_1 {
+        width: 120px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 115px;
+        left: 2px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_2 {
+        width: 130px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 185px;
+        left: 0px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_3 {
+        width: 120px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 50px;
+        left: 250px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_4 {
+        width: 130px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 150px;
+        left: 250px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_5 {
+        width: 130px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 220px;
+        left: 250px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+}
+
+@media (min-width:390px) and (max-width:404.99px) {
+
+    .ImageTable table tr td:nth-child(2) {
+        padding-left: 4px !important;
+    }
+
+    .rocket_launch {
+        padding-top: 25px;
+    }
+
+    .rocket_launch table img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .rocket_launch table tr td:nth-child(2) {
+        font-size: xx-small;
+    }
+
+    .Images {
+        border-radius: .25rem;
+        max-width: 350px;
+        height: 350px;
+        border-radius: 8px;
+        cursor: pointer;
+        padding-left: 0px;
+    }
+
+    .ImageText {
+        width: 100px !important;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 20px;
+        left: 2px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_1 {
+        width: 100px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 120px;
+        left: 2px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_2 {
+        width: 110px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 185px;
+        left: 0px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_3 {
+        width: 100px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 50px;
+        left: 250px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_4 {
+        width: 110px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 150px;
+        left: 250px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_5 {
+        width: 110px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 220px;
+        left: 250px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+}
+
+@media (min-width:365px) and (max-width:389px) {
+
+    .ImageTable table tr td:nth-child(2) {
+        padding-left: 4px !important;
+    }
+
+    .rocket_launch {
+        padding-top: 25px;
+    }
+
+    .rocket_launch table img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .rocket_launch table tr td:nth-child(2) {
+        font-size: xx-small;
+    }
+
+    .Images {
+        border-radius: .25rem;
+        max-width: 310px;
+        height: 310px;
+        border-radius: 8px;
+        cursor: pointer;
+        padding-left: 40px;
+    }
+
+    .ImageText {
+        width: 100px !important;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 20px;
+        left: 12px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_1 {
+        width: 100px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 105px;
+        left: 2px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_2 {
+        width: 110px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 175px;
+        left: 0px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_3 {
+        width: 100px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 50px;
+        left: 225px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_4 {
+        width: 110px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 140px;
+        left: 225px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_5 {
+        width: 110px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 200px;
+        left: 225px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+}
+
+@media (max-width:365px) {
+
+    .ImageTable table tr td:nth-child(2) {
+        padding-left: 4px !important;
+    }
+
+    .rocket_launch {
+        padding-top: 25px;
+    }
+
+    .rocket_launch table img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .rocket_launch table tr td:nth-child(2) {
+        font-size: xx-small;
+    }
+
+    .Images {
+        border-radius: .25rem;
+        max-width: 270px;
+        height: 270px;
+        border-radius: 8px;
+        cursor: pointer;
+        padding-left: 40px;
+    }
+
+    .ImageText {
+        width: 100px !important;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 18px;
+        left: 12px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_1 {
+        width: 100px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 90px;
+        left: 2px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_2 {
+        width: 110px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 145px;
+        left: 0px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_3 {
+        width: 100px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 40px;
+        left: 200px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_4 {
+        width: 110px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 120px;
+        left: 202px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+
+    .ImageText_5 {
+        width: 115px;
+        height: auto;
+        background: #fff 0% 0% no-repeat padding-box;
+        border-radius: 5px 5px 5px 5px;
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(50px);
+        position: absolute;
+        top: 170px;
+        left: 202px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Segoe UI";
+        -webkit-box-shadow: 0 0 10px rgb(212, 212, 212);
+        box-shadow: 0 0 10px rgb(212, 212, 212);
+    }
+}
+
+.ImageText:hover,
+.ImageText_1:hover,
+.ImageText_2:hover,
+.ImageText_3:hover,
+.ImageText_4:hover,
+.ImageText_5:hover {
+    background-color: #dae2ff; 
+    box-shadow: 0px 0px 10px 10px #eef3ff;
+}
