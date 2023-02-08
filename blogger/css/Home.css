@@ -873,7 +873,8 @@ html{
 }
 
 .join-solution-wrap {
-  background: #081452 !important;
+  /* background: #10279b; */
+  background: linear-gradient(90deg, #1e36b3 -19.27%, #10279b 100%);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
