@@ -1724,7 +1724,7 @@
                                         pattern="/^\d+$/" id="tenth_1" maxlength="1" /> -->
                                     <input class="mobile-verify pass m-2 text-center form-control rounded" type="number"
                                         id="first_1" min="0" max="9" oninput="maxLengthCheck(this)"
-                                        onkeypress="return isNumeric(event)" maxlength="15" />
+                                        onkeypress="return isNumeric(event)" maxlength="10" />
                                     <!--<input class="mobile-verify pass m-2 text-center form-control rounded" type="number"
                                         id="second_1" min="0" max="9" oninput="maxLengthCheck(this)"
                                         onkeypress="return isNumeric(event)" maxlength="1"/>
@@ -2517,6 +2517,17 @@
         window.intlTelInput(input, {
             separateDialCode: true,
             preferredCountries: ["in"]
+        });
+        input.addEventListener("countrychange", function () {
+            // do something with iti.getSelectedCountryData()
+            console.log("country is changed")
+            if ($('.iti__selected-dial-code').text() == '+86') {
+                console.log("country = CHINA")
+                $('#first_1').attr('maxlength', '11')
+            }
+            else {
+                $('#first_1').attr('maxlength', '10')
+            }
         });
     </script>
 
