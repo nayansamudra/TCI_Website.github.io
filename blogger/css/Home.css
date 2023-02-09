@@ -2418,9 +2418,14 @@ div.course-panel p {
   transition: 0.5s;
   backdrop-filter: blur(15px);
 }
+
+.container_2 .btn a {
+  color: #000d47 !important;
+}
+
 .container_1 .btn:hover a {
   letter-spacing: 3px;
-  color: white;
+  color: white !important;
 }
 .container_1 .btn a::before {
   content: "";
@@ -2470,6 +2475,11 @@ div.course-panel p {
   transition: 0.5s;
   transition-delay: 0.5;
 }
+
+.container_2 .btn::before,.container_2 .btn::after {
+  background: #000d47 !important;
+}
+
 .container_1 .btn:hover::after /*lightup button*/ {
   top: 0;
   height: 50%;
@@ -2492,10 +2502,11 @@ div.course-panel p {
   #About_Tredcode {
     display: none;
   }
-  #Trecode_row_second_col div {
+  #Trecode_row_second_col div,
+  #delayedPopup_row_second_col div {
     margin-left: 0 !important;
   }
-  #Tredcode_Modal_heading {
+  #Tredcode_Modal_heading, #delayedPopup_Modal_heading {
     font-size: x-large !important;
   }
   .container_1 .btn {
@@ -2505,7 +2516,9 @@ div.course-panel p {
     display: flex;
   }
   #Trecode_row_second_col .img_description_bold,
-  #Trecode_row_second_col .img_description {
+  #delayedPopup_row_second_col .img_description_bold,
+  #Trecode_row_second_col .img_description,
+  #delayedPopup_row_second_col .img_description {
     text-align: center;
   }
 }
@@ -2526,7 +2539,7 @@ div.course-panel p {
   .container_1 .btn {
     width: 160px !important;
   }
-  #Trecode_row_second_col {
+  #Trecode_row_second_col,#delayedPopup_row_second_col {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -2537,7 +2550,7 @@ div.course-panel p {
 }
 
 @media (max-width: 1125px) {
-  #Tredcode_Modal_heading {
+  #Tredcode_Modal_heading, #delayedPopup_Modal_heading {
     font-size: x-large !important;
   }
 }
@@ -2562,7 +2575,7 @@ div.course-panel p {
   border: none;
   background: transparent;
 }
-.myaccordion .card-header button{
+.myaccordion .card-header button {
   background: #f3f3ff;
   border-radius: 10px !important;
 }
@@ -2605,7 +2618,7 @@ div.course-panel p {
   z-index: 0;
   background: #324ed4;
   border-radius: 10px !important;
-  border: 3px solid #2238a7
+  border: 3px solid #2238a7;
 }
 .myaccordion .btn .icon i {
   font-size: 20px;
@@ -2670,7 +2683,7 @@ button[aria-expanded="false"] {
   box-shadow: 0px 7px 24px -19px rgba(0, 0, 0, 0.22);
 }
 @media (max-width: 767.98px) {
-  .card-body .row .col-md-12{
+  .card-body .row .col-md-12 {
     position: relative;
     z-index: 1;
     left: -5px;
@@ -2682,4 +2695,60 @@ button[aria-expanded="false"] {
 
 .card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+/* Modal on page Refresh */
+
+/*   This is the background overlay   */
+.backgroundOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  -moz-opacity: 0.85;
+  z-index: 101;
+  display: none;
+}
+
+#delayedPopup .modal-content{
+  background:linear-gradient(90deg, #c7d0ff -19.27%, #5171ff 100%);
+}
+
+@media (max-width:992px) { 
+  #delayedPopup_row_first_col{
+    margin-left: 0 !important;
+  }
+
+  #delayedPopup_row_second_col{
+    padding-left: 0 !important;
+  }
+
+  #delayedPopup_row_second_col .img_description span{
+    font-size: medium !important;
+  }
+  #telegram_background div{
+    justify-content: center !important;
+    display: flex !important;
+  }
+}
+
+@media (max-width:768px) {
+  #delayedPopup_row_first_col img {
+    width: 50% !important;
+  }  
+  #delayedPopup_row_first_col {
+    justify-content: center !important;
+    display: flex !important;
+  }
+  #hide_image img{
+    display: none !important;
+  }
 }

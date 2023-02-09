@@ -18,8 +18,8 @@ $(document).ready(function () {
     $('#collapse_Three').removeClass('show in')
     $('#heading_Two button').addClass('collapsed')
     $('#heading_Three button').addClass('collapsed')
-    $('#heading_Two button').attr('aria-expanded','false')
-    $('#heading_Three button').attr('aria-expanded','false')
+    $('#heading_Two button').attr('aria-expanded', 'false')
+    $('#heading_Three button').attr('aria-expanded', 'false')
     if ($('#collapse_One').hasClass('in')) {
       $('#collapse_One').removeClass('show')
     }
@@ -32,8 +32,8 @@ $(document).ready(function () {
     $('#collapse_Three').removeClass('show in')
     $('#heading_One button').addClass('collapsed')
     $('#heading_Three button').addClass('collapsed')
-    $('#heading_One button').attr('aria-expanded','false')
-    $('#heading_Three button').attr('aria-expanded','false')
+    $('#heading_One button').attr('aria-expanded', 'false')
+    $('#heading_Three button').attr('aria-expanded', 'false')
     if ($('#collapse_Two').hasClass('in')) {
       $('#collapse_Two').removeClass('show')
     }
@@ -46,8 +46,8 @@ $(document).ready(function () {
     $('#collapse_One').removeClass('show in')
     $('#heading_Two button').addClass('collapsed')
     $('#heading_One button').addClass('collapsed')
-    $('#heading_Two button').attr('aria-expanded','false')
-    $('#heading_One button').attr('aria-expanded','false')
+    $('#heading_Two button').attr('aria-expanded', 'false')
+    $('#heading_One button').attr('aria-expanded', 'false')
     if ($('#collapse_Three').hasClass('in')) {
       $('#collapse_Three').removeClass('show')
     }
@@ -55,7 +55,6 @@ $(document).ready(function () {
       $('#collapse_Three').addClass('show')
     }
   })
-
 
   $('.course-accordion').on('click', function () {
     counter_course_accordion += 1
