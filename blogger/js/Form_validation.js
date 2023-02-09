@@ -1,22 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function (event) {
-//     function OTPInput() {
-//         const inputs = document.querySelectorAll('#otp > *[id]');
-//         for (let i = 0; i < inputs.length; i++) {
-//             inputs[i].addEventListener('keydown', function (event) {
-//                 if (event.key === "Backspace") {
-//                     inputs[i].value = '';
-//                     if (i !== 0) inputs[i - 1].focus();
-//                     $('#send_btn').attr('disabled', 'disabled');
-//                     $('#validate_btn').attr('disabled', 'disabled');
-//                 } else {
-//                     if (i === inputs.length - 1 && inputs[i].value !== '') { return true; }
-//                 }
-//             });
-//         }
-//     }
-//     OTPInput();
-// });
-
 document.querySelectorAll('.mobile-verify.pass').forEach(el => el.onkeyup = e => {
     let regexEmail = /^\d+$/;
     if (e.target.value.match(regexEmail)) {
@@ -60,29 +41,13 @@ document.querySelectorAll('.form_input').forEach(el => el.onkeyup = e => {
 function enablesubmitbutton() {
     let first = $('#first_1').val()
     let first_1 = $('#first').val()
-    // let second = $('#second_1').val()
-    // let second_1 = $('#second').val()
-    // let third = $('#third_1').val()
-    // let third_1 = $('#third').val()
-    // let fourth = $('#fourth_1').val()
-    // let fourth_1 = $('#fourth').val()
-    // let fifth = $('#fifth_1').val()
-    // let fifth_1 = $('#fifth').val()
-    // let sixth = $('#sixth_1').val()
-    // let sixth_1 = $('#sixth').val()
-    // let seventh = $('#seventh_1').val()
-    // let eighth = $('#eighth_1').val()
-    // let ninth = $('#ninth_1').val()
-    // let tenth = $('#tenth_1').val()
     let name = $("#name_ip").val()
     let email = $("#email_ip").val()
     let desc = $("#difficulties").val()
-    // if (first != '' && second != '' && third != '' && fourth != '' && fifth != '' && sixth != '' && seventh != '' && eighth != '' && ninth != '' && tenth != '') {
     if (first != '') {
         $('#send_btn').removeAttr('disabled');
     }
 
-    // if (first_1 != '' && second_1 != '' && third_1 != '' && fourth_1 != '' && fifth_1 != '' && sixth_1 != '') {
     if (first_1 != '') {
         $('#validate_btn').removeAttr('disabled');
     }
@@ -94,21 +59,11 @@ function enablesubmitbutton() {
 
 function SendOtp() {
     let first = $('#first_1').val()
-    // let second = $('#second_1').val()
-    // let third = $('#third_1').val()
-    // let fourth = $('#fourth_1').val()
-    // let fifth = $('#fifth_1').val()
-    // let sixth = $('#sixth_1').val()
-    // let seventh = $('#seventh_1').val()
-    // let eighth = $('#eighth_1').val()
-    // let ninth = $('#ninth_1').val()
-    // let tenth = $('#tenth_1').val()
     if (first != NaN && first != '') {
         $('#mobile_number').text(first)
     }
 
     let ccode = $(".iti__selected-flag").attr('title').match(/\d+/)[0];
-    // let phone = ccode + first + second + third + fourth + fifth + sixth + seventh + eighth + ninth + tenth
     let phone = ccode + first
     phone_number = phone
 
@@ -169,24 +124,9 @@ function SendOtp() {
             $('#Modal_6').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')               // Modal 6
             // lock
             $('#send_btn').off()
-            // $("#ph_msg").text("Already registered, Fill details & submit form to Proceed")
-            // setTimeout(function () {
-            //     $("#send_btn").click(function () {
-            //         SendOtp()
-            //     })
-            // }, 30000);
-
-            //disable verify otp ip
-
-            // $("#otp_ip").prop('disabled', true);
-            $("#submit_btn").click(function () {
+            /$("#submit_btn").click(function () {
                 submit_lead_form()
             })
-            // $("#verify_otp_btn").off()
-            // $("#cc").prop('disabled', 'true')
-            // $("#number_ip").prop('disabled', 'true')
-            // $("#verify_msg").css("color", "green")
-            // $("#verify_msg").text("OTP Already Verified")
         }
         else if (data == "phone_already_registered") {
             $('#Send_OTP_Modal').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')        // Modal 1
@@ -196,13 +136,7 @@ function SendOtp() {
             $('#Modal_5').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')               // Modal 5
             $('#Modal_6').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')               // Modal 6
 
-            // $("#ph_msg").text("We have sent a message on Whatsapp, Check Now")
             $('#send_btn').off()
-            // setTimeout(function () {
-            //     $("#send_btn").click(function () {
-            //         SendOtp()
-            //     })
-            // }, 30000);
         }
         else {
             $('#Send_OTP_Modal').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')        // Modal 1
@@ -211,7 +145,6 @@ function SendOtp() {
             $('#Modal_4').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')               // Modal 4
             $('#Modal_5').removeClass().addClass('container d-flex justify-content-center align-items-center')                      // Modal 5
             $('#Modal_6').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')               // Modal 6
-            // $("#ph_msg").text("Phone Number Incorrect")
         }
     });
 }
@@ -219,13 +152,7 @@ function SendOtp() {
 const verify_otp = () => {
 
     let first_1 = $('#first').val()
-    // let second_1 = $('#second').val()
-    // let third_1 = $('#third').val()
-    // let fourth_1 = $('#fourth').val()
-    // let fifth_1 = $('#fifth').val()
-    // let sixth_1 = $('#sixth').val()
 
-    // let otp = first_1 + second_1 + third_1 + fourth_1 + fifth_1 + sixth_1
     let otp = first_1
     console.log(otp)
 
@@ -241,10 +168,7 @@ const verify_otp = () => {
             })
             $("#ph_msg").text("OTP Verified")
             $("#verify_otp_btn").off()
-            // $("#cc").prop('disabled', 'true')
-            // $("#number_ip").prop('disabled', 'true')
             $("#ph_msg").css("color", "#324ed4")
-            // $("#verify_msg").text("")
             $('#GetFreeCounseling').animate({
                 scrollTop: $("#submit_btn").offset().top
             }, 2000);
@@ -298,9 +222,7 @@ const validateEmail = () => {
 submit_lead_form = () => {
     let name = $("#name_ip").val()
     let email = $("#email_ip").val()
-    // let ccode = $("#cc").val();
-    // let phone = $("#number_ip").val()
-    // ccode = ccode.substring(1);
+
     let phone = phone_number
 
     if (global_email_valid == false) { console.log('em_invalid'); return }
@@ -336,7 +258,6 @@ submit_lead_form = () => {
             }, 5500);
             $('#User_Details_Modal').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')
             $('#Modal_6').removeClass().addClass('container d-flex justify-content-center align-items-center')
-            // $("#success_img").fadeIn(500, function () { $("#success_img").delay(1500).fadeOut(500) })
         }
     });
 }
@@ -353,20 +274,6 @@ $('.btn-close').click(function () {
     $('#submit_btn').attr('disabled', 'disabled');
     $('#first_1').val("")
     $('#first').val("")
-    // $('#second_1').val("")
-    // $('#second').val("")
-    // $('#third_1').val("")
-    // $('#third').val("")
-    // $('#fourth_1').val("")
-    // $('#fourth').val("")
-    // $('#fifth_1').val("")
-    // $('#fifth').val("")
-    // $('#sixth_1').val("")
-    // $('#sixth').val("")
-    // $('#seventh_1').val("")
-    // $('#eighth_1').val("")
-    // $('#ninth_1').val("")
-    // $('#tenth_1').val("")
     $("#name_ip").val("")
     $("#email_ip").val("")
     $("#difficulties").val("")
@@ -376,31 +283,6 @@ $(document).ready(function () {
 
     global_otp_ct = 0
 
-    // $('#otp_ip').on("input", function () {
-    //     let ip = this.value
-    //     if (ip.length > 0 && ip.length < 6) {
-    //         console.log("e 6 dig")
-    //         $("#verify_msg").css("color", "red")
-    //         $("#verify_msg").text("Enter 6 Digit OTP")
-    //     }
-    //     else if (ip.length == 6) {
-    //         console.log("hiding not,show rsp")
-    //         verify_otp()
-    //     }
-    // });
-
-    // let a = $(window).width()
-    // if ($(window).width() > 600) {
-    //     var res = (25 / 100) * a;
-    //     console.log(res)
-    // }
-    // else {
-    //     var res = (50 / 100) * a;
-    //     console.log(res)
-    // }
-
-
-    // $("#success_img img").width(res)
     api_leads_url = "https://tcistudents.com/leads"
     global_email_valid = false
     // css fix
@@ -423,20 +305,6 @@ $(document).ready(function () {
         $('#submit_btn').attr('disabled', 'disabled');
         $('#first_1').val("")
         $('#first').val("")
-        // $('#second_1').val("")
-        // $('#second').val("")
-        // $('#third_1').val("")
-        // $('#third').val("")
-        // $('#fourth_1').val("")
-        // $('#fourth').val("")
-        // $('#fifth_1').val("")
-        // $('#fifth').val("")
-        // $('#sixth_1').val("")
-        // $('#sixth').val("")
-        // $('#seventh_1').val("")
-        // $('#eighth_1').val("")
-        // $('#ninth_1').val("")
-        // $('#tenth_1').val("")
         $("#name_ip").val("")
         $("#email_ip").val("")
         $("#difficulties").val("")
