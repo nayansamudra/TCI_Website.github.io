@@ -278,6 +278,8 @@ $('.btn-close').click(function () {
 })
 
 $(document).ready(function () {
+    
+    $('img').attr("oncontextmenu","return false;")
 
     global_otp_ct = 0
 
