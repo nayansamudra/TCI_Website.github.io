@@ -124,11 +124,9 @@ function SendOtp() {
             $('#Modal_6').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')               // Modal 6
             // lock
             $('#send_btn').off()
-        
-            $("#submit_btn").click(function () {
+           $("#submit_btn").click(function () {
                 submit_lead_form()
             })
-            
         }
         else if (data == "phone_already_registered") {
             $('#Send_OTP_Modal').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')        // Modal 1
@@ -139,7 +137,6 @@ function SendOtp() {
             $('#Modal_6').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')               // Modal 6
 
             $('#send_btn').off()
-            
         }
         else {
             $('#Send_OTP_Modal').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')        // Modal 1
@@ -148,7 +145,6 @@ function SendOtp() {
             $('#Modal_4').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')               // Modal 4
             $('#Modal_5').removeClass().addClass('container d-flex justify-content-center align-items-center')                      // Modal 5
             $('#Modal_6').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')               // Modal 6
-            
         }
     });
 }
@@ -156,7 +152,6 @@ function SendOtp() {
 const verify_otp = () => {
 
     let first_1 = $('#first').val()
-
     let otp = first_1
     console.log(otp)
 
@@ -172,9 +167,7 @@ const verify_otp = () => {
             })
             $("#ph_msg").text("OTP Verified")
             $("#verify_otp_btn").off()
-            
             $("#ph_msg").css("color", "#324ed4")
-            
             $('#GetFreeCounseling').animate({
                 scrollTop: $("#submit_btn").offset().top
             }, 2000);
@@ -228,7 +221,6 @@ const validateEmail = () => {
 submit_lead_form = () => {
     let name = $("#name_ip").val()
     let email = $("#email_ip").val()
-
     let phone = phone_number
 
     if (global_email_valid == false) { console.log('em_invalid'); return }
@@ -264,7 +256,6 @@ submit_lead_form = () => {
             }, 5500);
             $('#User_Details_Modal').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')
             $('#Modal_6').removeClass().addClass('container d-flex justify-content-center align-items-center')
-            
         }
     });
 }
@@ -321,9 +312,8 @@ $(document).ready(function () {
         $('html').css('overflow', 'hidden');
     })
     .on('hidden.bs.modal', function () {
-        $('html').css('overflow', 'hidden')
-        $('html').attr('style','overflow-x:hidden !important')
-        $('body').attr('style','overflow-x:hidden !important')
+        $('html').attr('style','overflow-x:hidden !important; overflow-y:auto !important')
+        $('body').attr('style','overflow-x:hidden !important; overflow-y:auto !important')
     })
 
     $('#Tredcode_Modal').on('shown.bs.modal', function () {
@@ -332,8 +322,7 @@ $(document).ready(function () {
     })
     .on('hidden.bs.modal', function () {
         console.log('tredcode_modal is close')
-        $('html').css('overflow', 'hidden')
-        $('html').attr('style','overflow-x:hidden !important')
-        $('body').attr('style','overflow-x:hidden !important')
+        $('html').attr('style','overflow-x:hidden !important; overflow-y:auto !important')
+        $('body').attr('style','overflow-x:hidden !important; overflow-y:auto !important')
     })
 });
