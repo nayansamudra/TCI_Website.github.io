@@ -2299,6 +2299,7 @@ div.course-panel p {
   }
   #odometer_counter {
     margin-bottom: 40px !important;
+    padding-top: 0 !important;
   }
   #Our_Faculty_Team {
     margin-bottom: 0 !important;
@@ -2341,6 +2342,9 @@ div.course-panel p {
   }
   .course-panel p {
     margin-bottom: 0 !important;
+  }
+  .card-title-video-testimonial{
+    padding-bottom: 20px !important;
   }
 }
 
@@ -2421,11 +2425,13 @@ div.course-panel p {
 
 .container_2 .btn a {
   color: #000d47 !important;
+  background-color: white !important;
 }
 
 .container_1 .btn:hover a {
   letter-spacing: 3px;
   color: white !important;
+  background-color: transparent !important;
 }
 .container_1 .btn a::before {
   content: "";
@@ -2722,15 +2728,26 @@ button[aria-expanded="false"] {
   background:linear-gradient(90deg, #c7d0ff -19.27%, #5171ff 100%);
 }
 
+#delayedPopup .modal-body{
+  background:linear-gradient(90deg, #c7d0ff -19.27%, #5171ff 100%);
+}
+
+#delayedPopup .btn-close{
+  background-color: white !important;
+}
+
+#delayedPopup_row_first_col img.telegram_logo {
+  display: none !important;
+} 
+
 @media (max-width:992px) { 
   #delayedPopup_row_first_col{
     margin-left: 0 !important;
   }
-
   #delayedPopup_row_second_col{
-    padding-left: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
-
   #delayedPopup_row_second_col .img_description span{
     font-size: medium !important;
   }
@@ -2743,9 +2760,14 @@ button[aria-expanded="false"] {
 @media (max-width:768px) {
   #delayedPopup_row_first_col img {
     width: 50% !important;
+  } 
+  #delayedPopup_row_first_col img.telegram_logo {
+    width: 25% !important;
+    display: block !important;
   }  
   #delayedPopup_row_first_col {
-    justify-content: center !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
     display: flex !important;
   }
   #hide_image img{

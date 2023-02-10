@@ -124,9 +124,11 @@ function SendOtp() {
             $('#Modal_6').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')               // Modal 6
             // lock
             $('#send_btn').off()
-            /$("#submit_btn").click(function () {
+        
+            $("#submit_btn").click(function () {
                 submit_lead_form()
             })
+            
         }
         else if (data == "phone_already_registered") {
             $('#Send_OTP_Modal').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')        // Modal 1
@@ -137,6 +139,7 @@ function SendOtp() {
             $('#Modal_6').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')               // Modal 6
 
             $('#send_btn').off()
+            
         }
         else {
             $('#Send_OTP_Modal').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')        // Modal 1
@@ -145,6 +148,7 @@ function SendOtp() {
             $('#Modal_4').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')               // Modal 4
             $('#Modal_5').removeClass().addClass('container d-flex justify-content-center align-items-center')                      // Modal 5
             $('#Modal_6').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')               // Modal 6
+            
         }
     });
 }
@@ -168,7 +172,9 @@ const verify_otp = () => {
             })
             $("#ph_msg").text("OTP Verified")
             $("#verify_otp_btn").off()
+            
             $("#ph_msg").css("color", "#324ed4")
+            
             $('#GetFreeCounseling').animate({
                 scrollTop: $("#submit_btn").offset().top
             }, 2000);
@@ -258,6 +264,7 @@ submit_lead_form = () => {
             }, 5500);
             $('#User_Details_Modal').removeClass().addClass('container d-none d-flex justify-content-center align-items-center')
             $('#Modal_6').removeClass().addClass('container d-flex justify-content-center align-items-center')
+            
         }
     });
 }
@@ -312,15 +319,21 @@ $(document).ready(function () {
 
     $('#GetFreeCounseling').on('shown.bs.modal', function () {
         $('html').css('overflow', 'hidden');
-    }).on('hidden.bs.modal', function () {
-        $('html').css('overflow', 'auto');
+    })
+    .on('hidden.bs.modal', function () {
+        $('html').css('overflow', 'hidden')
+        $('html').attr('style','overflow-x:hidden !important')
+        $('body').attr('style','overflow-x:hidden !important')
     })
 
     $('#Tredcode_Modal').on('shown.bs.modal', function () {
         console.log('tredcode_modal is open')
-        $('html').css('overflow', 'hidden');
-    }).on('hidden.bs.modal', function () {
+        $('html').css('overflow', 'hidden')
+    })
+    .on('hidden.bs.modal', function () {
         console.log('tredcode_modal is close')
-        $('html').css('overflow', 'auto');
+        $('html').css('overflow', 'hidden')
+        $('html').attr('style','overflow-x:hidden !important')
+        $('body').attr('style','overflow-x:hidden !important')
     })
 });

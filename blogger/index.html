@@ -390,7 +390,7 @@
                     <div class="px-0 mx-0 Mobile_Video">
                         <div class="Mobile">
                             <img src="./img/Laptop_Mobile_View.png" alt="Laptop_Image">
-                            <iframe class="Laptop_Video_iframe"
+                            <iframe class="Laptop_Video_iframe_mobile"
                                 src="https://player.vimeo.com/video/796194771?h=c42df8671e&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -840,7 +840,7 @@
                                 setups in Live market</span>
                         </div>
                         <div class="my-3 container_1 border-0">
-                            <div class="btn"><a href="javascript:void(0)" data-bs-toggle="modal" data-src=""
+                            <div class="btn" id="Tredcode_Feature"><a href="javascript:void(0)" data-bs-toggle="modal" data-src=""
                                     data-bs-target="#Tredcode_Modal" target="">Explore Now</a>
                             </div>
                         </div>
@@ -1908,10 +1908,10 @@
                 </div>
                 <div class="modal-body">
                     <div class="container-xxl" id="About_Tredcode">
-                        <div class="my-5 heading text-center">
+                        <div class="my-2 heading text-center">
                             <span style="font-weight: bold;font-size:26px">Everything you need</span>
                         </div>
-                        <div class="my-5 row py-5">
+                        <div class="my-4 row py-4">
                             <div class="col-lg-6">
                                 <img src="./img/Screenshot_30.png" width="100%" height="100%"
                                     style="border-radius: 10px; box-shadow: 0 0 5px 5px rgb(218, 218, 218);" />
@@ -1931,7 +1931,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="py-5 my-5 row" id="second_row">
+                        <div class="py-4 my-4 row" id="second_row">
                             <div class="col-lg-6">
                                 <div class="me-5 img_description_bold text-left" style="color:#5271ff">
                                     <span style="font-weight: bold">Index Analysis</span>
@@ -1951,7 +1951,7 @@
                                     style="border-radius: 10px;box-shadow: 0 0 5px 5px rgb(218, 218, 218);" />
                             </div>
                         </div>
-                        <div class="my-5 row py-5">
+                        <div class="my-4 row py-4">
                             <div class="col-lg-6">
                                 <img src="./img/Screenshot_28.png" width="100%" height="100%"
                                     style="border-radius: 10px;box-shadow: 0 0 5px 5px rgb(218, 218, 218);" />
@@ -1970,7 +1970,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="py-5 my-5 row" id="fourth_row">
+                        <div class="py-4 my-4 row" id="fourth_row">
                             <div class="col-lg-6">
                                 <div class="me-5 img_description_bold text-left" style="color:#5271ff">
                                     <span style="font-weight: bold">Pro Setups</span>
@@ -1991,10 +1991,10 @@
                         </div>
                     </div>
                     <div class="container-xxl" id="About_Tredcode_Mobile_View">
-                        <div class="mt-5 heading text-center">
+                        <div class="heading text-center">
                             <span style="font-weight: bold;font-size:26px">Everything you need</span>
                         </div>
-                        <div class="my-5 row pb-5">
+                        <div class="my-4 row pb-4">
                             <div class="col-lg-6">
                                 <img src="./img/Screenshot_30.png" width="100%" height="100%"
                                     style="border-radius: 10px; box-shadow: 0 0 5px 5px rgb(218, 218, 218);" />
@@ -2014,7 +2014,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="py-5 my-5 row" id="second_row">
+                        <div class="py-4 my-4 row" id="second_row">
                             <div class="col-lg-6">
                                 <img src="./img/Screenshot_29.png" width="100%" height="100%"
                                     style="border-radius: 10px;box-shadow: 0 0 5px 5px rgb(218, 218, 218);" />
@@ -2034,7 +2034,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="my-5 row py-5">
+                        <div class="my-4 row py-4">
                             <div class="col-lg-6">
                                 <img src="./img/Screenshot_28.png" width="100%" height="100%"
                                     style="border-radius: 10px;box-shadow: 0 0 5px 5px rgb(218, 218, 218);" />
@@ -2053,7 +2053,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="py-5 my-5 row" id="second_row">
+                        <div class="py-4 my-4 row" id="second_row">
                             <div class="col-lg-6">
                                 <img src="./img/Screenshot_31.png" width="100%" height="100%"
                                     style="border-radius: 10px;box-shadow: 0 0 5px 5px rgb(218, 218, 218);" />
@@ -2089,10 +2089,12 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="modal-body mb-5">
-                    <div class="container">
+                    <div class="container" id="delayedPopup_modal_body" style="cursor: pointer;">
                         <div class="row">
                             <div class="col-md-4 ms-5" id="delayedPopup_row_first_col">
+                                <img src="./img/tci_telegram_logo.jpg" width="100%" style="border-radius: 50%;" class="telegram_logo">
                                 <img src="./img/Telegram_Mobile_Pic.png" width="100%">
+                                <img src="./img/telegram_logo.png" width="100%" class="telegram_logo">
                             </div>
                             <div class="col-md d-flex align-items-center justify-content-center"
                                 id="delayedPopup_row_second_col">
@@ -2105,8 +2107,9 @@
                                             id="delayedPopup_Modal_heading">Stock Ideas by TCI®🎯📈</span>
                                     </div>
                                     <div class="my-3 img_description">
-                                        <span style="font-weight: normal; font-size: larger; color:#000d47">Join our
-                                            Telegram channel to get daily trading ideas and trading hacks </span>
+                                        <span style="font-weight: normal; font-size: x-large; color:#000d47"><u>Join our
+                                                Telegram</u> channel to get daily trading ideas and trading hacks
+                                        </span>
                                     </div>
                                     <div class="my-3 container_1 container_2 border-0">
                                         <div class="btn"><a href="https://telegram.me/tradingcafeindia">Join Now</a>
@@ -2199,6 +2202,11 @@
             laptop_vdo_player.on('play', function () {
                 clearTimeout(myTimeout)
             });
+            var laptop_vdo_mobile = $('.Laptop_Video_iframe_mobile')
+            var laptop_vdo_player_mobile = new Vimeo.Player(laptop_vdo_mobile);
+            laptop_vdo_player_mobile.on('play', function () {
+                clearTimeout(myTimeout)
+            });
 
             mode_1 = mode_2 = mode_3 = Main_testimonial_mode = ""
             player_one = player_two = player_three = Main_testimonial_player = ""
@@ -2219,14 +2227,25 @@
                 $("#delayedPopup").show();
             }, 5000);
 
+            $('#delayedPopup_modal_body').click(() => {
+                window.open('https://telegram.me/tradingcafeindia');
+            })
+
+            $('.btn-know-more').click(() => {
+                clearTimeout(myTimeout);
+            })
+
+            $('#Tredcode_Feature').click(() => {
+                clearTimeout(myTimeout);
+            })
+
             $('.main_testimonial_video-thumbnail').click(() => {
                 clearTimeout(myTimeout);
                 $('.main_testimonial_video-thumbnail').hide();
                 $('.video-thumbnail-1').show();
                 $('.video-thumbnail-2').show();
                 $('.video-thumbnail-3').show();
-                // let c = $('#main_testimonial_iframe_link').attr('src')
-                // $('#main_testimonial_iframe_link').attr('src', c + 'autoplay=1&amp;autoplay=1&amp;autoplay=1')
+
                 var main_testimonial_iframe = $('#main_testimonial_iframe_link')[0];
                 var player_main_testimonial = new Vimeo.Player(main_testimonial_iframe);
                 Main_testimonial_player = player_main_testimonial
