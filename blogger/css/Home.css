@@ -1987,7 +1987,17 @@ div[class*="learnworlds-bg-default"] {
   }
 
   .second_row {
-    font-size: xx-small !important;
+    font-size: 12px !important;
+  }
+
+  .three_box {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .three_box:nth-child(2){
+    margin-left: 5px !important;
+    margin-right: 5px !important;
   }
 
   #three_box_heading {
@@ -2028,8 +2038,13 @@ div[class*="learnworlds-bg-default"] {
   }
 
   .second_row {
-    font-size: xx-small !important;
+    font-size: 11.5px !important;
     padding-bottom: 0.2rem !important;
+  }
+
+  #three_box_container_fluid{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
 
   .three_box {
