@@ -469,6 +469,36 @@
     font-size: 17px !important;
 }
 
+@media (max-width:992px) {
+    .join-team-card-head-content-box h5 {
+        font-size: 18px !important;
+    }
+    .join-team-card-head-content-box p {
+        font-size: 14px !important;
+    }
+    .join-team-card-head-content-box h5 {
+        font-family: Outfit;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17px;
+        color: #181818;
+    }
+    .join-team-card-head-content-box p {
+        font-family: Outfit;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px;
+        color: #0A0A0A;
+        margin-bottom: 0;
+    }
+    .join-team-card-body ul li h5 {
+        margin-bottom: 0 !important;
+    }
+    .join-team-card-body ul li {
+        margin-bottom: 10px !important;
+    }
+}
+
 /*** logo ***/
 
 .logo-wrap {
